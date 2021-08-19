@@ -1,34 +1,90 @@
-.logo
-{
-    float: left;
+@font-face{ 
+	font-family: 'Raleway';
+	src:url('fonts/raleway-regular-webfont.woff') format('woff'),
+        url('fonts/raleway-regular-webfont.woff2') format('.woff2'),
+	    url('fonts/Raleway-Regular.ttf') format('truetype'),
+	    url('WebFont.svg#webfont') format('svg');
 }
+
+body
+{ 
+    font-family: 'Raleway'; 
+}
+
 
 header
 {
     display: flex;
-    flex-wrap: wrap;
-    
-    
-
+    justify-content: space-between;
 }
 
-nav
+nav a
 {
-    margin-top: 10px;
+    margin-right: 40px;
+    display: inline-block;
+    margin-top: 5px;
 }
-
 
 ul
 {
     list-style: none;
 }
 
-
-
-footer h2
+#titre
 {
-    display: flex;    
-    flex-wrap: wrap;
-    list-style: none;
+    height: 20px;    
+}
+
+#filtres
+{
+    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 1em;
+}
+
+#recherche
+{
+    border: 1px solid rgb(197, 196, 196);
+    width:418px;
+    height: 50px;
+    border-radius: 1em;
+    
+    bu: #0065FC;
 
 }
+
+
+h1, h2, h3, nav, #filtres
+{
+    font-weight: bold;
+}
+
+#filtres i
+{
+    float: left;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    padding: 16px ;
+    border: 0.15em solid #DEEBFF;
+    border-radius: 1.6em;
+    margin-left: 50px;
+}
+
+#filtres a
+{
+    border: 0.15em solid rgb(197, 196, 196);
+    border-radius: 2em;
+    padding: 1em 1em 1em 4em;
+
+}
+
+
+.info_dispo .fas
+{
+    float: left;
+    position: absolute;
+    padding-block-start: initial;
+}
+
