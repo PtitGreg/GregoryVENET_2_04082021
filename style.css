@@ -1,4 +1,5 @@
-@font-face{ 
+@font-face
+{ 
 	font-family: 'Raleway';
 	src:url('fonts/raleway-regular-webfont.woff') format('woff'),
         url('fonts/raleway-regular-webfont.woff2') format('.woff2'),
@@ -9,6 +10,10 @@
 body
 { 
     font-family: 'Raleway'; 
+    background-color: rgb(242, 242, 242);
+    background-size: auto ;
+    margin-left: 50px;
+
 }
 
 
@@ -16,13 +21,18 @@ header
 {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
+
 }
+
+
 
 nav a
 {
     margin-right: 40px;
     display: inline-block;
     margin-top: 5px;
+    border-top-color: #0065FC;
 }
 
 ul
@@ -36,8 +46,7 @@ ul
 }
 
 #filtres
-{
-    
+{    
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -50,9 +59,6 @@ ul
     width:418px;
     height: 50px;
     border-radius: 1em;
-    
-    bu: #0065FC;
-
 }
 
 
@@ -63,13 +69,11 @@ h1, h2, h3, nav, #filtres
 
 #filtres i
 {
-    float: left;
     color: #0065FC;
     background-color: #DEEBFF;
     padding: 16px ;
     border: 0.15em solid #DEEBFF;
     border-radius: 1.6em;
-    margin-left: 50px;
 }
 
 #filtres a
@@ -77,14 +81,41 @@ h1, h2, h3, nav, #filtres
     border: 0.15em solid rgb(197, 196, 196);
     border-radius: 2em;
     padding: 1em 1em 1em 4em;
-
 }
 
 
-.info_dispo .fas
+
+
+a:any-link
 {
-    float: left;
-    position: absolute;
-    padding-block-start: initial;
+    text-decoration: none;
 }
 
+
+.titre_hebergement
+{
+    max-width: 880px;
+    max-height: 625px;
+    background-color: rgb(242, 242, 242);
+
+}
+
+.footer
+{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.a_propos, .nos_hebergements, .assistance
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 230px;
+    min-width: 200px;
+
+}
+
+.footer a
+{
+    color: black;
+}
