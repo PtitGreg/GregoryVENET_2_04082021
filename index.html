@@ -24,10 +24,12 @@
             <div id="titre"><h1>Trouvez votre hébergement pour des vacances de rêve</h1></div>
                 <p>En plein centre ville ou en pleine nature</p>
 
-                <div id="recherche">
+                <div id="localisation">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="ville" value="Marseille, France">
-                    <button type="submit" value="Rechercher"></button>
+                    <form>
+                        <input type="search" name="ville" value="Marseille, France">                   
+                        <button type="submit" value="Rechercher"></button>
+                    </form> 
                 </div>
             <div id="filtres">Filtres
                     <i class="fas fa-money-bill-wave"></i>                    
@@ -42,31 +44,49 @@
                     <a href="Animaux autorisés">Animaux</a>
             </div>
             <div class="info_dispo">
-                <div class="logo_dispo"></div>
-                    <i class="fas fa-info"></i>
-                    <i class="far fa-circle"></i>
+                <div class="i">
+                    <i class="fas fa-info fa-xs"></i>
+                </div>
+                <div class="cercle">
+                    <i class="far fa-circle fa-lg"></i>
+                </div>
                 <p>Plus de 500 sont disponibles dans cette ville</p>                    
             </div>
-            <h1>Hébergements à Marseille</h1>
-                <div id="titre_hebergement">
-                    <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cliquez ici">
-                    <h3>Auberge la Cannebière</h3>
+            <div class="bloc_hebergement_a_marseille">
+                <h1>Hébergements à Marseille</h1>                
+                    <div class="titre_hebergement">                                 
+                        <img id="image_hebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cliquez ici">
+                        <h3>Auberge la Cannebière</h3>
                         <p>Nuit à partir de 25€</p>
+                    </div>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                </div>
-                
-                <a href="Afficher plus">Afficher plus</a>
+                        <i class="fas fa-star"></i>                    
+                <a href="Afficher_plus">Afficher plus</a>
+            </div>
+
         </section>
         <aside>
-            <h1>Les plus populaires</h1>
-            <i class="fas fa-chart-line"></i>
+            <div class="bloc_populaire">
+                <h1>Les plus populaires</h1>
+                <i class="fas fa-chart-line"></i>            
+                    <div class="titre_populaire">                                 
+                        <img id="image_populaire" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Cliquez ici">
+                        <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir 128€</p>
+                    </div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+             </div>       
+                
         </aside>
         <section>
-            <div class="act_a_marseille"><h1>Activité à Marseille</h1>
+            <div class="bloc_act_a_marseille"><h1>Activité à Marseille</h1>
             
             </div>
             
@@ -75,16 +95,16 @@
         </section>
         <footer>
             <div class="footer">
-                <div class="a_propos"><h2 id=>A propos</h2>
+                <div class="a_propos"><h3>A propos</h3>
                     <a href="Fonctionnement du site">Fonctionnement du site</a>
                     <a href="Condition générales de vente">Condition générales de vente</a>
                     <a href="Données et confidentialité">Données et confidentialité</a>
                 </div>
-                <div class="nos_hebergements"><h2>Nos hébergements</h2>
+                <div class="nos_hebergements"><h3>Nos hébergements</h3>
                     <a href="Charte qualité">Charte qualité</a>
                     <a href="Soumettre votre hôtel">Soumettre votre hôtel</a>
                 </div>
-                <div class="assistance"><h2>Assistance</h2>
+                <div class="assistance"><h3>Assistance</h3>
                     <a href="Centre d'aide">Centre d'aide</a>
                     <a href="Nous contacter">Nous contacter</a>
                 </div>

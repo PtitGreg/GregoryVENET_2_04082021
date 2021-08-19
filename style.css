@@ -1,4 +1,4 @@
-@font-face
+@font-face /*recup police*/
 { 
 	font-family: 'Raleway';
 	src:url('fonts/raleway-regular-webfont.woff') format('woff'),
@@ -7,54 +7,41 @@
 	    url('WebFont.svg#webfont') format('svg');
 }
 
-body
+body /*police site*/
 { 
-    font-family: 'Raleway'; 
-    background-color: rgb(242, 242, 242);
-    background-size: auto ;
-    margin-left: 50px;
-
+    font-family: "Raleway"; 
 }
 
 
-header
+header /*placement entete site*/
 {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-
+    
 }
 
 
 
-nav a
+nav a /*liens navigation*/
 {
     margin-right: 40px;
     display: inline-block;
     margin-top: 5px;
     border-top-color: #0065FC;
+    text-decoration: none;
+
 }
 
-ul
+ul /*puces invisibles*/
 {
     list-style: none;
 }
 
-#titre
-{
-    height: 20px;    
-}
 
-#filtres
-{    
+#localisation /*recherche localisation*/
+{
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    font-size: 1em;
-}
-
-#recherche
-{
+    flex: auto;
     border: 1px solid rgb(197, 196, 196);
     width:418px;
     height: 50px;
@@ -62,12 +49,40 @@ ul
 }
 
 
-h1, h2, h3, nav, #filtres
+
+#filtres /*selection filtres*/
+{    
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 1em;
+}
+
+.i /*couleur du "i" au nombres d'hergements trouvés*/
+{
+    color: #0065FC;
+}
+
+.cercle /*couleur du cercle au nombre d'hebergements trouvés*/
+{
+    color: rgb(197, 196, 196);
+}
+
+.info_dispo /* alignement nombres d'hergements trouvés*/
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 40%;
+}
+
+
+h1, h2, h3, nav, #filtres /* éléments en bold*/
 {
     font-weight: bold;
 }
 
-#filtres i
+#filtres i /*placement des filtres*/
 {
     color: #0065FC;
     background-color: #DEEBFF;
@@ -76,46 +91,105 @@ h1, h2, h3, nav, #filtres
     border-radius: 1.6em;
 }
 
-#filtres a
+#filtres a /*config liens des filtres*/
 {
     border: 0.15em solid rgb(197, 196, 196);
     border-radius: 2em;
     padding: 1em 1em 1em 4em;
-}
-
-
-
-
-a:any-link
-{
     text-decoration: none;
+
 }
 
 
-.titre_hebergement
+
+
+
+
+
+
+
+
+.bloc_hebergement_a_marseille
 {
-    max-width: 880px;
-    max-height: 625px;
-    background-color: rgb(242, 242, 242);
-
+    width: 880px;
+    height: 625px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    
 }
 
-.footer
-{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.a_propos, .nos_hebergements, .assistance
+.titre_hebergement /*annonces hebergements à Marseille*/
 {
     display: flex;
     flex-direction: column;
-    margin-right: 230px;
-    min-width: 200px;
+}
+
+#image_hebergement /*image annonce du bloc "Hébergements à Marseille"*/
+{
+    height: 130px;
+    width: 130px;
+    border-radius: 15px 0px 0px 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+.bloc_populaire /*bloc "Les plus populaires"*/
+{
+    width: 420px;
+    height: 625px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    margin-left: 40px;
 
 }
 
-.footer a
+.titre_populaire
+{
+    
+}
+
+#image_populaire /*image annonce du bloc "les plus populaires"*/
+{
+    height: 130px;
+    width: 130px;
+    border-radius: 15px 0px 0px 15px;
+    float: left;
+    margin-right: 10px;
+}
+
+.bloc_act_a_marseille /*bloc "Activité à Marseille"*/
+{
+    height: 625px;
+    width: 1350px;
+}
+
+
+
+header, section, .footer /*marge gauche et droite*/
+{
+    padding: 40px;
+    margin: 20ox;
+    color: black;
+}
+
+.footer /*personnalisation footer*/
+{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(242, 242, 242);
+}
+
+.a_propos, .nos_hebergements, .assistance /*personnalisation colonnes dans footer*/
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+}
+
+.footer a /*personnalisation liens footer*/
 {
     color: black;
+    margin-top: 5px;
+    text-decoration: none;
+
 }
