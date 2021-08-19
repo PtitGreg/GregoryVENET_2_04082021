@@ -7,48 +7,88 @@
 	    url('WebFont.svg#webfont') format('svg');
 }
 
-body /*police site*/
-{ 
-    font-family: "Raleway"; 
+ul /*puces invisibles*/
+{
+    list-style: none;
 }
 
+h1, h2, h3, nav, #filtres /* éléments en bold*/
+{
+    font-weight: bold;
+}
 
 header /*placement entete site*/
 {
     display: flex;
     justify-content: space-between;
-    
+    max-width: 1300px;
 }
 
+body /*police site*/
+{ 
+    font-family: "Raleway";
+}
 
+section
+{
+    margin-left: 50px;
+    max-width: 1300;
+}
 
 nav a /*liens navigation*/
 {
     margin-right: 40px;
-    display: inline-block;
     margin-top: 5px;
     border-top-color: #0065FC;
     text-decoration: none;
 
 }
 
-ul /*puces invisibles*/
+#titre /*hauteur titre du site*/
 {
-    list-style: none;
+    height: 20px;
 }
 
-
-#localisation /*recherche localisation*/
-{
+.localisation /*recherche localisation*/
+{    
     display: flex;
-    flex: auto;
-    border: 1px solid rgb(197, 196, 196);
+    justify-content: flex-start;
+    border: 1px solid #F2F2F2;
     width:418px;
     height: 50px;
-    border-radius: 1em;
+    border-radius: 15px;
 }
 
+#image_gps
+{
+    
+    background-color: #F2F2F2;
+    padding: 15px 25px;
+    background-size: 300px 100px;
+    border-radius: 15px 0px 0px 15px;
+}
 
+#search
+{
+    width: 235px;
+    height: 50px;
+    border: none;
+    text-align: center;
+}
+
+#submit
+{
+    width: 116px;
+    height: 50px;
+    padding: 20px;
+    background-color: #0065FC;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    color: black;
+    text-align: left;
+
+    font-size: 16px;
+}
 
 #filtres /*selection filtres*/
 {    
@@ -77,10 +117,7 @@ ul /*puces invisibles*/
 }
 
 
-h1, h2, h3, nav, #filtres /* éléments en bold*/
-{
-    font-weight: bold;
-}
+
 
 #filtres i /*placement des filtres*/
 {
@@ -165,17 +202,16 @@ h1, h2, h3, nav, #filtres /* éléments en bold*/
 
 
 
-header, section, .footer /*marge gauche et droite*/
+header, .footer /*marge gauche et droite*/
 {
-    padding: 40px;
-    margin: 20ox;
-    color: black;
+    padding: 50px;
+    
 }
 
 .footer /*personnalisation footer*/
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row ;
     background-color: rgb(242, 242, 242);
 }
 
@@ -183,7 +219,6 @@ header, section, .footer /*marge gauche et droite*/
 {
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
 }
 
 .footer a /*personnalisation liens footer*/
@@ -191,5 +226,5 @@ header, section, .footer /*marge gauche et droite*/
     color: black;
     margin-top: 5px;
     text-decoration: none;
-
+    margin-right: 300px;
 }
