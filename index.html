@@ -9,15 +9,18 @@
         <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
         <!--appel icones-->
         <script src="https://kit.fontawesome.com/b2b020a3e0.js" crossorigin="anonymous"></script>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     </head>
     <body>        
 
         <header>            
             <img class="logo" href="http://127.0.0.1:5500/index.html" src="images/logo/reservia.svg" alt="Acceuil Reservia">
             <nav>                    
-                <a id="heb" href="Hébergements">Hébergements</a>                
-                <a id="act" href="Activités">Activités</a>
-                <strong><a href="S'inscrire">S'inscrire</a></strong>              
+                <ul>
+                    <li><a id="nav_heber" href="#bloc_hebergement_a_marseille">Hebergement</a></li>
+                    <li><a href="#bloc_populaire">Activités</a></li>
+                    <li><strong><a href="inscription">S'inscrire</a></strong></li>
+                </ul>
             </nav>
         </header>
         <section>
@@ -61,7 +64,7 @@
             </div>
         <section>
             <div class="big_bloc_heb_pop">
-                <div class="bloc_hebergement_a_marseille">
+                <div id="bloc_hebergement_a_marseille">
                     <div id="titre_hebergement"><h1>Hébergements à Marseille</h1></div>
                         <div class="titre_hebergement">
                             <img id="image_hebergement" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cliquez ici">
@@ -123,11 +126,12 @@
                             <i id="star_blue" class="fas fa-star"></i>
                             <i id="star_blue" class="fas fa-star"></i>
                         </div>
-                    <a href="Afficher_plus">Afficher plus</a>
+                        <a id="afficher_plus" href="Afficher_plus">Afficher plus</a>
                 </div>
-                <div class="bloc_populaire">
-                    <div id="titre_bloc_populaire"><h1>Les plus populaires</h1>
-                    <i class="fas fa-chart-line"></i></div>
+                <div id="bloc_populaire">
+                    <div class="titre_bloc_populaire"><h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                         <div class="titre_populaire">                                 
                             <img id="image_populaire" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Cliquez ici">
                             <h3>Hôtel Le soleil du matin</h3>
