@@ -14,16 +14,16 @@
     <body>        
 
         <header>            
-            <img class="logo" href="http://127.0.0.1:5500/index.html" src="images/logo/reservia.svg" alt="Acceuil Reservia">
+            <img id="logo" class="logo" src="images/logo/reservia.svg">
             <nav>                    
                 <ul>
                     <li><a id="nav_heber" href="#bloc_hebergement_a_marseille">Hebergement</a></li>
-                    <li><a href="#bloc_populaire">Activités</a></li>
+                    <li><a id="act" href="#titre_act_a_marseille">Activités</a></li>
                     <li><strong><a href="inscription">S'inscrire</a></strong></li>
                 </ul>
             </nav>
         </header>
-        <section>
+        <section>            
             <div class="marge_section1">
                 <div id="titre"><h1>Trouvez votre hébergement pour des vacances de rêve</h1></div>
                     <p>En plein centre ville ou en pleine nature</p>
@@ -35,7 +35,7 @@
                         
                         <form>
                             <input type="search" id="search" name="ville" value="Marseille, France">                                          
-                            <button type="submit" id="submit" value="Rechercher">Rechercher</button>
+                            <button type="submit" id="submit" value="">Rechercher</button>
                         </form> 
                     </div>
                 <div class="filtres">Filtres
@@ -50,6 +50,7 @@
                     </div>
                     <div id="ani">                        
                         <a href=""><i class="fas fa-dog"></i>Animaux autorisés</a>
+                        
                     </div>
                 </div>
                 <div class="info_dispo">
@@ -59,7 +60,7 @@
                     <div class="cercle">
                         <i class="far fa-circle fa-lg"></i>
                     </div>
-                    <p>Plus de 500 sont disponibles dans cette ville</p>                    
+                    <p>Plus de 500 sont disponibles dans cette ville</p>
                 </div>
             </div>
         <section>
@@ -128,8 +129,8 @@
                         </div>
                         <a id="afficher_plus" href="Afficher_plus">Afficher plus</a>
                 </div>
-                <div id="bloc_populaire">
-                    <div class="titre_bloc_populaire"><h1>Les plus populaires</h1>
+                <div class="bloc_populaire">
+                    <div id="titre_bloc_populaire"><h1>Les plus populaires</h1>
                         <i class="fas fa-chart-line"></i>
                     </div>
                         <div class="titre_populaire">                                 
@@ -166,35 +167,33 @@
             </div>
         </section>            
         <section>
-            <div class="bloc_act_a_marseille"><h1>Activité à Marseille</h1>
-                <div>
-                    <img id="image_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Cliquez ici">
-                            <h3>Hôtel Tout bleu et blanc</h3>
+            <div class="bloc_act_a_marseille">
+            <div id="titre_act_a_marseille"><h1>Activité à Marseille</h1></div>
+                <div class="annonce_act_1">
+                    <img id="image_act_a_marseille" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Cliquez ici">
+                    <h3>Vieux Port</h3>
                 </div>
-                <div>
-                    <img id="image_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Cliquez ici">
-                            <h3>Hôtel Tout bleu et blanc</h3>
+                <div class="annonce_act_2">
+                    <img id="image_act_a_marseille_2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Cliquez ici">
+                    <h3>Fort de Pomègues</h3>
                 </div>
-                <div>
-                    <img id="image_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Cliquez ici">
-                            <h3>Hôtel Tout bleu et blanc</h3>
+                <div class="annonce_act_2">
+                    <img id="image_act_a_marseille_2" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Cliquez ici">
+                    <h3>Îles du Frioul</h3>
                 </div>
-                <div>
-                    <img id="image_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Cliquez ici">
-                            <h3>Hôtel Tout bleu et blanc</h3>
+                <div class="annonce_act_1">
+                    <img id="image_act_a_marseille" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Cliquez ici">
+                    <h3>Parc National des Calanques</h3>
                 </div>
-                <div>
-                    <img id="image_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Cliquez ici">
-                            <h3>Hôtel Tout bleu et blanc</h3>
+                <div class="annonce_act_2">
+                    <img id="image_act_a_marseille_2" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Cliquez ici">
+                    <h3>Notre-Dame-de-la-Garde</h3>
                 </div>
-                <div>
-                    <img id="image_populaire" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Cliquez ici">
-                            <h3>Hôtel Tout bleu et blanc</h3>
+                <div class="annonce_act_2">
+                    <img id="image_act_a_marseille_2" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Cliquez ici">
+                    <h3>Parc Longchamps</h3>
                 </div>
-            </div>
-            
-
-
+            </div>                
         </section>
         <footer>
             <div class="footer">
