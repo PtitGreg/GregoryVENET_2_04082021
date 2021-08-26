@@ -1,22 +1,13 @@
-h1
+h1 /*config titre h1*/
 {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-h2
+h2 /*config titre h2*/
 {
     font-size: 1.4rem;
     font-weight: bold;
-
-}
-
-
-
-.annonce_hebergement p, .bloc_hebergement_a_marseille h3, .bloc_populaire h3, .bloc_act_a_marseille h3 , .marge_star /*marge gauche*/
-{
-    margin-left: 1rem;
-    color: black;
 }
 
 strong  /* éléments en gras*/
@@ -24,7 +15,7 @@ strong  /* éléments en gras*/
     font-weight: bold;    
 }
 
-a
+a /* config liens*/
 {
     text-decoration: none;
 }
@@ -35,6 +26,13 @@ header /*placement entete site*/
     justify-content: space-between;
     flex-flow: row wrap;
     margin: auto;
+    max-width: 80%;
+}
+
+section
+{
+    width: 80%;
+    margin: auto;
 }
 ul/*disposition navbar*/
 {
@@ -43,7 +41,7 @@ ul/*disposition navbar*/
     list-style-type: none;
 }
 
-ul a
+ul a /* liens navigateur*/
 {
     margin-left: 5rem;
     text-decoration: none;
@@ -52,17 +50,17 @@ ul a
     color: #0065FC;
 }
 
-ul a:hover
+ul a:hover /*survol liens navigateur*/
 {
     border-top: 0.5rem solid #0065FC;
 }
 
-#nav_heber
+#nav_heber /*hebergement du navigateur*/
 {
     color: #0065FC;
 }
 
-#act
+#act /*activité du navigateur*/
 {
     color: black;
 }
@@ -70,10 +68,7 @@ ul a:hover
 body /*police site*/
 { 
     font-family: "Raleway";
-    width: 80%;
-    margin: auto;
 }
-
 
 .localisation /*bloc recherche localisation*/
 {    
@@ -123,6 +118,7 @@ body /*police site*/
     align-items: center;
     margin-top: 2rem;
     font-weight: bold;
+    width: 70%;
 }
 
 .filtres i /*placement images des filtres*/
@@ -141,7 +137,7 @@ body /*police site*/
     border-left: none;
     text-decoration: none;
     padding-right: 1rem;
-    margin-left: 3rem;
+    margin-left: auto;    
     color: black;
     transition: 1s;
 }
@@ -171,7 +167,7 @@ body /*police site*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 360px;
+    max-width: 22rem;
     margin: 1rem 0rem;
 }
 
@@ -185,12 +181,21 @@ body /*police site*/
     color: rgb(217, 217, 217);
 }
 
+
+.annonce_hebergement p, .bloc_hebergement_a_marseille h3, .bloc_populaire h3, .bloc_act_a_marseille h3 , .marge_star /*marge descrition annonces*/
+{
+    color: black;
+    margin: 0.3rem 0rem 0rem 0.8rem;
+}
+
+
+
 .big_bloc_heb_pop /*ensemble "hebergement a marseille" et "les plus populaires"*/
 {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-start;
     align-items: stretch;
+    justify-content: space-between;
     
 }
 
@@ -201,13 +206,13 @@ body /*police site*/
     justify-content: flex-start;
     align-items: center;
     background-color: #F2F2F2;
-    border-radius: 15px;
+    border-radius: 1rem;
     padding: 1rem;
-    width: 60rem;
-    margin-right: 2rem;
+    max-width: 60rem;
+    margin-right: auto;
 }
 
-.titre_hebergement /*titre bloc hebergement*/
+#titre_hebergement /*titre bloc hebergement*/
 {
     width: 100%;
     margin-left: 2rem;
@@ -216,13 +221,13 @@ body /*police site*/
 .annonce_hebergement /*annonces hebergements à Marseille*/
 {
     background-color: white;
-    border-radius: 15px;
-    font-size: 0.7rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
     width: 15rem;
-    box-shadow: 2px 2px 10px 2px rgba(97, 97, 97, 0.2);
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
     cursor: pointer;
-    padding: 0.3rem;
     margin: 2rem;
+    padding: 0.3rem 0.3rem 0.8rem 0.3rem;
 }
 
 .image_hebergement /*image annonce du bloc "Hébergements à Marseille"*/
@@ -230,15 +235,17 @@ body /*police site*/
     object-fit: cover;
     height: 8rem;
     width: 100%;
-    border-radius: 10px 15px 0px 0px;    
+    border-radius: 1rem 1rem 0px 0px;
+
 }
 
-#afficher_plus
+#afficher_plus /*lien "afficher plus"*/
 {
     margin-left: 2rem;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    
 }
 
 .bloc_populaire /*bloc "Les plus populaires"*/
@@ -246,8 +253,10 @@ body /*police site*/
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    border-radius: 15px;
+    border-radius: 1rem;
     padding: 1.5rem;
+    width: 27rem;
+
 }
 
 #titre_bloc_populaire /*Titre du bloc "les plus populaires"*/
@@ -259,16 +268,16 @@ body /*police site*/
     margin: 0rem 1rem;
 }
 
-.titre_populaire /*Annonce populaire*/
+.annonce_populaire /*Annonce populaire*/
 {
     background-color: white;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px 2px rgba(97, 97, 97, 0.2);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
     cursor: pointer;
     font-size: 0.8rem;
     margin:1rem;
     height: 8.8rem;
-    width: 20rem;
+    width: auto;
     padding: 0.3rem;
 }
 
@@ -277,80 +286,126 @@ body /*police site*/
     object-fit: cover;
     height: 8.8rem;
     width: 8rem;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 1rem 0rem 0rem 1rem;
     float: left;
     margin-right: 1rem;
 }
 
+.annonce_populaire i /*marge etoiles annonces populaires*/
+{
+    margin-top: 3rem;
+}
+
 .bloc_act_a_marseille /*bloc "Activité à Marseille"*/
 {    
+    display: block;
     display: flex;
     flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    height: 30rem;
+    height: 25rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-#titre_act_a_marseille /* titre bloc "activité a Marseille"*/
+.annonce_act_1 /*grande annonce*/
 {
-    width: 100%;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
 }
 
-.minibloc_act_marseille /*bloc 3 activité*/
+.annonce_act_1 img /*image grande annonce*/
 {
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
+    border-radius: 15px;
+    width: 100%;
+    height: 88%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0px 0px;
+}
+
+.minicards /*bloc 2 activité*/
+{
+    width: 20rem;
+    height: 25rem;
     display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.annonce_act_1
+.annonce_60 /*annonce 60%*/
 {
-    display: block;
-    box-shadow: 2px 2px 10px 2px rgba(97, 97, 97, 0.2);
+    height: 12rem;
+    width: 100%;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
+    margin-bottom: 2rem;
+
+}
+
+.annonce_60 img /*image env 60%*/
+{
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
     border-radius: 15px;
-    width: 16rem;
-    height: 23rem;
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0px 0px
+}
+
+.annonce_40 /* mini annonce activité Marseille*/
+{
+    height: 10rem;
+    width: 20rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
+}
+
+.annonce_40 img /* image mini annonce activité Marseille*/
+{
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
+    border-radius: 15px;
+    width: 100%;
+    height: 70%;
     cursor: pointer;
     font-size: small;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0px 0px
 }
 
-.annonce_act_2
+.annonce_50/*annonce activité Marseille*/
 {
-    display: block;
-    box-shadow: 2px 2px 10px 2px rgba(97, 97, 97, 0.2);
+    width: 100%;
+    height: 11.5rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
+}
+
+.annonce_50 img /*image annonce activité Marseille */
+{
+    box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
     border-radius: 15px;
-    width: 16rem;
-    height: 11rem;
+    width: 100%;
+    height: 75%;
     cursor: pointer;
     font-size: small;
-}
-
-.image_act_a_marseille
-{
     object-fit: cover;
-    width: 100%;
-    height: 20rem;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.image_act_a_marseille_2
-{
-    object-fit: cover;
-    width: 100%;
-    height: 8rem;
-    box-shadow: 15px ;
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 1rem 1rem 0px 0px
 }
 
 
-.footer /*personnalisation footer*/
+
+footer /*personnalisation footer*/
 {
     display: flex;
     flex-flow: row wrap ;
     justify-content: space-between;
     background-color: rgb(242, 242, 242);
-    padding: 3rem;
+    padding: 2rem 0rem;
 }
 
 .a_propos, .nos_hebergements, .assistance /*personnalisation colonnes dans footer*/
@@ -358,9 +413,10 @@ body /*police site*/
     display: flex;
     flex-direction: column;
     min-width: 15rem;
+    margin: 0% 10%;
 }
 
-.footer a /*personnalisation liens footer*/
+footer a /*personnalisation liens footer*/
 {
     color: black;
     text-decoration: none;
@@ -369,7 +425,7 @@ body /*police site*/
     
 }
 
-.footer a:hover
+footer a:hover /*survol liens footer */
 {
     text-decoration: underline;
 }
