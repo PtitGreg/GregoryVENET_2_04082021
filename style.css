@@ -491,6 +491,32 @@ footer a:hover /*survol liens footer */
 
 @media screen and (max-width: 675px)
 {
+ 
+    header img
+        {
+            float: left;
+            
+        }
+    
+    
+    header ul
+        {
+            display: flex;
+            flex-flow: row wrap-reverse;
+            align-items: flex-start;
+            align-content: flex-end;
+            justify-content: flex-end;
+            
+        }
+
+    #nav_heber
+        {
+            width: 100rem;
+        }
+
+
+    
+    
     .bloc_hebergement_a_marseille
         {
             width: 22rem;
