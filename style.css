@@ -26,7 +26,7 @@ header /*placement entete site*/
     justify-content: space-between;
     flex-flow: row wrap;
     margin: auto;
-    max-width: 80%;
+    width: 80%;
 }
 
 section
@@ -39,6 +39,8 @@ ul/*disposition navbar*/
     display: flex;
     flex-flow: row wrap;
     list-style-type: none;
+    margin-right: 4rem;
+
 }
 
 ul a /* liens navigateur*/
@@ -46,13 +48,13 @@ ul a /* liens navigateur*/
     margin-left: 5rem;
     text-decoration: none;
     cursor: pointer;
-    padding-top: 0.8rem;
+    padding-top: 1.3rem;
     color: #0065FC;
 }
 
 ul a:hover /*survol liens navigateur*/
 {
-    border-top: 0.5rem solid #0065FC;
+    border-top: 0.2rem solid #0065FC;
 }
 
 #nav_heber /*hebergement du navigateur*/
@@ -135,7 +137,6 @@ body /*police site*/
     border: 2px solid #d9d9d9;
     border-radius: 2rem;
     border-left: none;
-    text-decoration: none;
     padding-right: 1rem;
     margin-left: auto;    
     color: black;
@@ -193,22 +194,19 @@ body /*police site*/
 .big_bloc_heb_pop /*ensemble "hebergement a marseille" et "les plus populaires"*/
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     align-items: stretch;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
 }
 
 .bloc_hebergement_a_marseille /*bloc "hebergement a marseille"*/ 
 {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
     background-color: #F2F2F2;
     border-radius: 1rem;
-    padding: 1rem;
-    max-width: 60rem;
+    padding: 1.25rem 0rem;
+    width: 60rem;
     margin-right: auto;
 }
 
@@ -236,26 +234,29 @@ body /*police site*/
     height: 8rem;
     width: 100%;
     border-radius: 1rem 1rem 0px 0px;
-
 }
 
 #afficher_plus /*lien "afficher plus"*/
 {
     margin-left: 2rem;
-    text-decoration: none;
     color: black;
-    font-weight: bold;
-    
+    font-weight: bold;    
+}
+
+#afficher_plus:hover
+{
+    text-decoration: underline;
 }
 
 .bloc_populaire /*bloc "Les plus populaires"*/
 {    
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 1rem;
-    padding: 1.5rem;
-    width: 27rem;
+    padding: 1rem;
+    width: 23rem;
 
 }
 
@@ -277,7 +278,7 @@ body /*police site*/
     font-size: 0.8rem;
     margin:1rem;
     height: 8.8rem;
-    width: auto;
+    width: 20rem;
     padding: 0.3rem;
 }
 
@@ -293,17 +294,16 @@ body /*police site*/
 
 .annonce_populaire i /*marge etoiles annonces populaires*/
 {
-    margin-top: 3rem;
+    padding-top: 10%;
+    padding-bottom: 1rem;
 }
 
 .bloc_act_a_marseille /*bloc "Activité à Marseille"*/
 {    
-    display: block;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
-    height: 25rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -338,7 +338,7 @@ body /*police site*/
 
 .annonce_60 /*annonce 60%*/
 {
-    height: 12rem;
+    height: 13rem;
     width: 100%;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 0px 0px 20px 5px rgba(97, 97, 97, 0.2);
@@ -405,15 +405,14 @@ footer /*personnalisation footer*/
     flex-flow: row wrap ;
     justify-content: space-between;
     background-color: rgb(242, 242, 242);
-    padding: 2rem 0rem;
+    padding: 2rem 10%;
 }
 
 .a_propos, .nos_hebergements, .assistance /*personnalisation colonnes dans footer*/
 {
     display: flex;
     flex-direction: column;
-    min-width: 15rem;
-    margin: 0% 10%;
+    margin-right: auto;
 }
 
 footer a /*personnalisation liens footer*/
@@ -430,3 +429,80 @@ footer a:hover /*survol liens footer */
     text-decoration: underline;
 }
 
+@media screen and (max-width: 1730px)
+    {
+        header, section
+            {
+                width: 90%;
+            }
+
+        footer
+            {
+                padding-left: 5%;
+            }
+    }
+
+@media screen and (max-width: 1550px)
+    {
+        header, section
+            {
+                width: 100%;
+            }
+
+            footer
+            {
+                padding-left: 1%;
+            }
+    }
+
+@media screen and (max-width: 1400px)
+{
+    .big_bloc_heb_pop
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 85rem;
+        }
+}
+
+@media screen and (max-width: 1320px)
+{
+    .annonce_act_1
+        {
+            margin-bottom: 2rem;
+        }
+}
+
+@media screen and (max-width: 1000px) 
+{
+    .bloc_hebergement_a_marseille
+        {
+            width: 40rem;
+            margin-bottom: 2rem;
+        }
+
+    .big_bloc_heb_pop
+        {
+            height: 90rem;
+            margin-bottom: 13rem;
+        }
+}
+
+@media screen and (max-width: 675px)
+{
+    .bloc_hebergement_a_marseille
+        {
+            width: 22rem;
+        }
+    
+    .big_bloc_heb_pop
+        {
+            height: 142rem;
+        }
+
+    .minicards
+        {
+            margin-bottom: 2rem;
+        }
+}
