@@ -2,13 +2,12 @@ html, body /*police site*/
 { 
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin:0;
-    
 }
-
 
 h1 /*taille titre h1*/
 {
     font-size: 2rem;
+    
 }
 
 h2 /*taille titre h2*/
@@ -32,24 +31,27 @@ a /* config liens*/
     text-decoration: none;
 }
 
-header /*placement entete site*/
+header
 {
-    
-    padding-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header img /*logo*/
+header img
 {
-    float: left;
-    padding-top: 0.5rem;
+    margin-top: 1rem;
 }
+
 
 nav /*navigateur*/
 {
     display: flex;
     flex-flow: row-reverse wrap;
+    justify-content: space-around;
     align-items: center;
     color: #0065FC;
+    width: 50%;
 }
 
 
@@ -58,20 +60,21 @@ ul/*disposition navbar*/
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    width: 60%;
+    
 }
 
 ul a /* liens navigateur*/
 {
-    width: 50%;
     text-decoration: none;
     cursor: pointer;
-    padding-top: 0.8rem;
-
+    padding: 1.15rem 1rem 0rem 1rem;
+    color: #0065FC;
 }
 
 ul a:hover /*survol liens navigateur*/
 {
-    border-top: 0.2rem solid #0065FC;
+    border-top: 0.15rem solid #0065FC;
 }
 
 #act, .text_annonce p/*activité du navigateur*/
@@ -135,7 +138,7 @@ ul a:hover /*survol liens navigateur*/
 {
     color: #0065FC;
     background-color: #DEEBFF;
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 2rem;
     margin-right: 1rem;
 }
@@ -189,7 +192,7 @@ ul a:hover /*survol liens navigateur*/
 .big_bloc_heb_pop /*ensemble "hebergement a marseille" et "les plus populaires"*/
 {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap-reverse;
     justify-content: space-around;
 }
 
@@ -252,7 +255,6 @@ ul a:hover /*survol liens navigateur*/
 {
     width: 90%;
     margin: auto;
-    padding: auto;
 }
 
 #afficher_plus /*lien "afficher plus"*/
@@ -478,6 +480,68 @@ footer a:hover /*survol liens footer */
     text-decoration: underline;
 }
 
+@media screen and (max-width:1000px)
+{
+    html, body
+    {
+        margin: 0;
+    }
+    
+    header 
+    {
+        flex-direction: column;
+        justify-items: start;
+        height: 8rem;
+    }
 
+    header img
+    {
+        margin-top: 0;
+        float: left;
+        left: 0;
+    }
+
+    header strong
+    {
+        
+    }
+    
+    ul a:hover /*survol liens navigateur*/
+    {
+        border-bottom: 0.15rem solid #0065FC;
+        border-top: none;
+        width: 50%;
+    }
+        
+    h1
+    {
+        font-size: 1.2rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+    
+
+    .big_bloc_heb_pop
+    {
+        flex-direction: column-reverse;
+    }
+
+    .bloc_populaire
+    {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .bloc_hebergement
+    {
+        background-color: white;
+    }
+
+    .bloc_annonces_heber_1
+    {
+        flex-direction: column;
+
+    }
+}
 
 
