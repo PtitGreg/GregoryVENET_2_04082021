@@ -7,7 +7,6 @@ html, body /*police site*/
 h1 /*taille titre h1*/
 {
     font-size: 2rem;
-    
 }
 
 h2 /*taille titre h2*/
@@ -123,6 +122,11 @@ nav a:hover /*survol liens navigateur*/
     font-size: 16px;
     cursor: pointer;
     transition: 1s;
+}
+
+.fa-search
+{
+    display: none;
 }
 
 #submit:hover /*bouton recherche*/
@@ -553,7 +557,6 @@ footer a:hover /*survol liens footer*/
 
     .localisation
     {
-        display: flex;
         align-items: flex-end;
         width: 17rem;
     }
