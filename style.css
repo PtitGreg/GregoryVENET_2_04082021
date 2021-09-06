@@ -1,85 +1,97 @@
-html, body /*police site*/
+/*police site*/
+html, body 
 { 
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin:0;
 }
 
-h1 /*taille titre h1*/
-{
-    font-size: 2rem;
-}
-
-h2 /*taille titre h2*/
+/*taille titre h2*/
+h2 
 {
     font-size: 1.4rem;
 }
 
-h3 /*taille titre h3*/
+/*taille titre h3*/
+h3 
 {
     font-size: 1rem;
     color: black;
 }
 
-strong/* éléments en gras*/
-{
-    font-weight: bold;    
-}
-
-a /* config liens*/
+/* config liens*/
+a 
 {
     text-decoration: none;
 }
 
+/* Ajustage position éléments du header */
 header
 {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;    
+    padding: 0 10% 0 3%;
 }
 
+/* Marge logo reservia */
 header img
 {
-    margin-top: 1rem;
+    padding-top: 1rem;
 }
 
-
-nav /*navigateur*/
+/* *disposition navbar */
+.nav12
 {
     display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: space-between;
-    color: #0065FC;
-    width: 40%;
-}
-
-
-ul/*disposition navbar*/
-{
-    display: flex;
-    justify-content: space-between;
+    flex: auto;
+    justify-content: flex-end;
     list-style-type: none;
-    
 }
 
-nav a /* liens navigateur*/
+/* liens 1 et 2 navigateur*/
+.nav12 a 
 {
     text-decoration: none;
     cursor: pointer;
-    padding: 1.15rem 1rem 0rem 1rem;
+    padding: 1.15rem  1rem;
     color: #0065FC;
 }
 
-nav a:hover /*survol liens navigateur*/
+/*survol liens navigateur*/
+.nav12 a:hover 
 {
     border-top: 0.15rem solid #0065FC;
 }
 
-#act, .text_annonce1,.text_annonce2/*couleur activité du navigateur + annonces*/
+/* éléments en gras*/
+.nav3
+{
+    font-weight: bold;
+    color: #0065FC;
+    padding-left: 1rem;
+}
+
+/*couleur activité du navigateur + annonces*/
+#act, .text_annonce1,.text_annonce2
 {
     color: black;
 }
 
-.localisation /*bloc recherche localisation*/
+/* Padding gauche et droite bloc section */
+section
+{
+    padding: 0 3%;
+}
+
+/*taille titre h1*/
+h1 
+{
+    font-size: 2rem;
+    
+}
+
+/*bloc recherche localisation*/
+.localisation 
 {    
     display: flex;
     justify-content: space-between;
@@ -91,7 +103,8 @@ nav a:hover /*survol liens navigateur*/
     border-radius: 2rem;
 }
 
-#image_gps /*image localisation*/
+/*image localisation*/
+#image_gps 
 {
     
     background-color: #F2F2F2;
@@ -100,7 +113,8 @@ nav a:hover /*survol liens navigateur*/
     border-radius: 15px 0 0 15px;
 }
 
-#search /*zone texte recherche*/
+/*zone texte recherche*/
+#search 
 {
     width: 150px;
     height: 50px;
@@ -109,7 +123,8 @@ nav a:hover /*survol liens navigateur*/
     padding-left: 15px;
 }
 
-#submit /*bouton recherche*/
+/*bouton recherche*/
+#submit 
 {
     width: 120px;
     height: 50px;
@@ -122,18 +137,21 @@ nav a:hover /*survol liens navigateur*/
     transition: 1s;
 }
 
-#display
+/* Camouflage jlogo search destop */
+#logo_search
 {
     display: none;
 }
 
-#submit:hover /*bouton recherche*/
+/*bouton recherche*/
+#submit:hover 
 {
     background-color: #DEEBFF;
     color: #0065FC;
 }
 
-.filtres /*selection filtres*/
+/*selection filtres*/
+.filtres 
 {    
     display: flex;
     flex-flow: row wrap;
@@ -144,12 +162,8 @@ nav a:hover /*survol liens navigateur*/
     width: 70%;
 }
 
-.filtres h3
-{
-    margin-right: 1rem;
-}
-
-.mini_bloc_filtre /*config liens des filtres*/
+/*config liens des filtres*/
+.mini_bloc_filtre 
 {
     display: flex;
     justify-content: space-between;
@@ -162,7 +176,14 @@ nav a:hover /*survol liens navigateur*/
     transition: 1s;
 }
 
-.filtres i /*placement images des filtres*/
+/* espace gauche et droite texte filtres */
+.titre_filtres
+{
+    padding: 0 1rem;
+}
+
+/*placement images des filtres*/
+.filtres i 
 {
     display: flex;
     align-items: center;
@@ -174,18 +195,15 @@ nav a:hover /*survol liens navigateur*/
     border-radius: 2rem;
 }
 
-.titre_filtres
-{
-    padding: 0 1rem;
-}
-
-.mini_bloc_filtre:hover /*zoom passage de souris sur filtres*/
+/*zoom passage de souris sur filtres*/
+.mini_bloc_filtre:hover 
 {
     font-size: 120%;
     cursor: pointer;
 }
 
-.i /*couleur du "i" au nombres d'hergements trouvés*/
+/*couleur du "i" au nombres d'hergements trouvés*/
+.i 
 {    
     color: #0065FC;
     position: relative;
@@ -195,7 +213,8 @@ nav a:hover /*survol liens navigateur*/
     margin:0 0.5rem;
 }
 
-.info_dispo /* alignement nombres d'hergements trouvés*/
+/* alignement nombres d'hergements trouvés*/
+.info_dispo 
 {
     display: flex;
     align-items: center;
@@ -203,24 +222,28 @@ nav a:hover /*survol liens navigateur*/
     margin: 1rem 0rem;
 }
 
-.blue /*etoite bleu*/
+/*etoite bleu*/
+.blue 
 {
     color: #0065FC;
 }
 
-.grey /*etoile grise*/
+/*etoile grise*/
+.grey 
 {
     color: #F2F2F2;
 }
 
-.big_bloc_heb_pop /*ensemble "hebergement a marseille" et "les plus populaires"*/
+/*ensemble "hebergement a marseille" et "les plus populaires"*/
+.big_bloc_heb_pop 
 {
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-around;
 }
 
-.bloc_hebergement /*bloc "hebergement a marseille"*/ 
+/*bloc "hebergement a marseille"*/ 
+.bloc_hebergement 
 {
     display: flex;
     flex-direction: column;
@@ -228,11 +251,20 @@ nav a:hover /*survol liens navigateur*/
     flex: 2;
     background-color: #F2F2F2;
     border-radius: 1rem;
-    height: auto;
+    height: 42rem;
     margin-right: 1rem;
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 2rem;
 }
 
+.bloc_annonces12
+{
+    height: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* Ligne d'annonce hebergement n°1 */
 .bloc_annonces_heber_1
 {
     display: flex;    
@@ -242,48 +274,60 @@ nav a:hover /*survol liens navigateur*/
     margin-bottom: 1rem;
 }
 
+/* Ligne d'annonce hebergement n°2 */
 .bloc_annonces_heber_2
 {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 1rem;
 }
 
-.annonce_hebergement /*annonces hebergements à Marseille*/
+/*annonces hebergements à Marseille*/
+.annonce_hebergement 
 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-items: space-between;
     align-content: space-between;
     background-color: white;
     width: 30%;
-    height: auto;
+    height: 13rem;
     border-radius: 1rem;
     font-size: 0.8rem;
     box-shadow: 5px 5px 10px 1px #F2F2F2;
-    cursor: pointer;
     padding: 0.3rem;
     transition: 1s;
 }
 
-
-.image_hebergement /*image annonce du bloc "Hébergements à Marseille"*/
+/*image annonce du bloc "Hébergements à Marseille"*/
+.image_hebergement 
 {
     object-fit: cover;
     background-position: center;
     width: 100%;
-    height: 120px;
+    height: 9rem;
     border-radius: 1rem 1rem 0 0;
 }
 
 .text_annonce1
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 90%;
-    margin: auto;
+    height: 30%;
+    margin-left: 1rem;
 }
 
-#afficher_plus /*lien "afficher plus"*/
+.text_annonce1 h3, .text_annonce1 p
+{
+    margin: 0;
+}
+
+
+
+/*lien "afficher plus"*/
+#afficher_plus 
 {
     color: black;
     font-weight: bold;
@@ -295,7 +339,8 @@ nav a:hover /*survol liens navigateur*/
     text-decoration: underline;
 }
 
-.bloc_populaire /*bloc "Les plus populaires"*/
+/*bloc "Les plus populaires"*/
+.bloc_populaire 
 {    
     display: flex;
     flex: 1;
@@ -307,7 +352,8 @@ nav a:hover /*survol liens navigateur*/
     margin-left: 1rem;
 }
 
-#titre_bloc_populaire /*Titre du bloc "les plus populaires"*/
+/*Titre du bloc "les plus populaires"*/
+#titre_bloc_populaire 
 {
     display: flex;
     flex-flow: row;
@@ -316,7 +362,8 @@ nav a:hover /*survol liens navigateur*/
     margin: 0 1rem;
 }
 
-.annonce_populaire /*Annonce populaire*/
+/*Annonce populaire*/
+.annonce_populaire 
 {
     display: flex;
     flex-flow: column;
@@ -330,7 +377,8 @@ nav a:hover /*survol liens navigateur*/
     transition: 1s;
 }
 
-.image_populaire /*image annonce du bloc "les plus populaires"*/
+/*image annonce du bloc "les plus populaires"*/
+.image_populaire 
 {
     float: left;
     object-fit: cover;
@@ -340,6 +388,7 @@ nav a:hover /*survol liens navigateur*/
     border-radius: 1rem 0 0 1rem;
 }
 
+/* Texte annonce populaire */
 .text_annonce2
 {
     width: 60%;
@@ -350,8 +399,18 @@ nav a:hover /*survol liens navigateur*/
     height: 100%;
 }
 
+.text_annonce2 h3, .text_annonce2 p
+{
+    margin: 0;
+}
 
-.bloc_act_a_marseille /*bloc "Activité à Marseille"*/
+.star_pop
+{
+    padding-top: 4rem;
+}
+
+/*bloc "Activité à Marseille"*/
+.bloc_act_a_marseille 
 {    
     display: flex;
     flex-flow: row;
@@ -361,31 +420,39 @@ nav a:hover /*survol liens navigateur*/
     height: 30rem;
 }
 
-.annonce_act_1 /*grande annonce*/
+/*grande annonce*/
+.annonce_act_1 
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     background-color: white;
-    height: 100%;
+    height: 30rem;
     width: 23%;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px 1px #F2F2F2;
     transition: 1s;
 }
 
-.annonce_act_1 img /*image grande annonce*/
+.bloc_act_a_marseille h3
+{
+    margin: auto;
+}
+
+/*image grande annonce*/
+.annonce_act_1 img 
 {
     border-radius: 15px;
     width: 100%;
-    height: 26.5rem;
+    height: 27rem;
     cursor: pointer;
     object-fit: cover;
     background-position: center;
     border-radius: 1rem 1rem 0 0;
 }
 
-.minicards1 /*bloc 2 activité*/
+/*bloc 2 activité*/
+.minicards1 
 {
     width: 23%;
     display: flex;
@@ -393,51 +460,58 @@ nav a:hover /*survol liens navigateur*/
     justify-content: space-between;
 }
 
-.annonce_60 /*annonce 60%*/
+/*annonce 60%*/
+.annonce_60 
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
+    height: 56%;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 5px 5px 10px 1px #F2F2F2;
     transition: 1s;
 }
 
-.annonce_60 img /*image env 60%*/
+/*image env 60%*/
+.annonce_60 img 
 {
     border-radius: 15px;
     width: 100%;
-    height: 12rem;
+    height: 14rem;
     cursor: pointer;
     object-fit: cover;
     background-position: center;
     border-radius: 1rem 1rem 0 0
 }
 
-.annonce_40 /* mini annonce activité Marseille*/
+/* mini annonce activité Marseille*/
+.annonce_40 
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    height: 36%;
     background-color: white;
     border-radius: 1rem 1rem 1rem 1rem;
     box-shadow: 5px 5px 10px 1px #F2F2F2;
     transition: 1s;
 }
 
-.annonce_40 img /* image mini annonce activité Marseille*/
+/* image mini annonce activité Marseille*/
+.annonce_40 img 
 {
     border-radius: 15px;
     width: 100%;
-    height: 9.1rem;
+    height: 7.8rem;
     cursor: pointer;
     object-fit: cover;
     background-position: center;
     border-radius: 1rem 1rem 0px 0px
 }
 
-.minicards2 /*bloc 2 activité*/
+/*bloc 2 activité*/
+.minicards2 
 {
     width: 23%;
     display: flex;
@@ -445,8 +519,8 @@ nav a:hover /*survol liens navigateur*/
     justify-content: space-between;
 }
 
-
-.annonce_50/*annonce activité Marseille*/
+/*annonce activité Marseille*/
+.annonce_50
 {
     display: flex;
     flex-direction: column;
@@ -459,21 +533,25 @@ nav a:hover /*survol liens navigateur*/
 
 }
 
-.annonce_50 img /*image annonce activité Marseille */
+/*image annonce activité Marseille */
+.annonce_50 img 
 {
     border-radius: 15px;
     width: 100%;
-    height: 10.5rem;
+    height: 11rem;
     cursor: pointer;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
 
+/* Padding titre activités */
 .bloc_act_a_marseille h3
 {
     padding-left: 5%;
+    padding-top: 0.5rem;
 }
 
+/* Animation passage du curseur */
 .annonce_hebergement:hover, .annonce_populaire:hover, .annonce_act_1:hover, .annonce_40:hover, .annonce_50:hover, .annonce_60:hover
 {
     cursor: pointer;
@@ -486,26 +564,24 @@ footer /*personnalisation footer*/
     flex-flow: row wrap ;
     justify-content: space-between;
     background-color:#F2F2F2;
-    padding: 2rem 0;
+    padding: 2rem 3%;
 }
 
-.a_propos, .nos_hebergements, .assistance /*personnalisation colonnes dans footer*/
+/*personnalisation colonnes dans footer*/
+.a_propos, .nos_hebergements, .assistance 
 {
     display: flex;
     flex-direction: column;
 }
 
-.a_propos
-{
-    margin-left: 5%;
-}
-
+/* Marge bloc assistance Footer */
 .assistance
 {
     margin-right: 15%;
 }
 
-footer a /*personnalisation liens footer*/
+/*personnalisation liens footer*/
+footer a 
 {
     color: black;
     text-decoration: none;
@@ -513,45 +589,100 @@ footer a /*personnalisation liens footer*/
     padding-top: 0.5rem;
 }
 
-footer a:hover /*survol liens footer*/
+/*survol liens footer*/
+footer a:hover 
 {
     text-decoration: underline;
 }
 
-@media screen and (max-width:1000px)
+/* Partie responsive 1200px */
+@media screen and (max-width:1200px) 
 {
-    html, body
+    .filtres
     {
-        margin: 0;
+    width: 100%;
     }
-    
-    header 
+
+    .bloc_hebergement
+    {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .bloc_annonces12
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+
+    .bloc_annonces_heber_1, .bloc_annonces_heber_2
+    {
+        width: 46%;
+    }
+
+    .bloc_annonces_heber_1, .bloc_annonces_heber_2
     {
         flex-direction: column;
-        justify-items: start;
-        height: 8rem;
+        justify-content: space-around;
+        height: 45rem;
     }
 
-    header img
+    .annonce_hebergement
     {
-        margin-top: 0;
-        float: left;
-        left: 0;
+        width: 97%;
+        height: 13rem;
+        margin: 0;
     }
 
-    ul a:hover /*survol liens navigateur*/
+    .bloc_populaire
+    {
+        padding-top: 0;
+    }
+}
+
+
+/* Partie responsive */
+@media screen and (max-width:1000px)
+{
+    header
+    {
+        height: 8rem;
+        width: 100%;
+        padding: 0 ;
+        flex-flow: column wrap;
+        justify-content: start;
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+
+    .nav12
+    {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav12 a
+    {
+        width: 50%;
+        text-align: center;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    .nav12 a:hover
     {
         border-bottom: 0.15rem solid #0065FC;
         border-top: none;
-        width: 50%;
     }
 
-       
-    h1
+    .nav3
     {
-        font-size: 1.2rem;
-        margin: 0 1rem 0 1rem;
+        padding-top: 2rem;
+        padding-left: 0;
     }
+
+
 
     .localisation
     {
