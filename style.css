@@ -95,46 +95,54 @@ h1
 {    
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;    
+    align-items: center;   
     height: 50px;
-    width: 20rem;
+    width: 22rem;
     border-radius: 2rem;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2; 
 }
 
-form
-{
-    display: flex;
-    align-items: center;
-    width: auto;
-}
 
 /*image localisation*/
 #image_gps 
 {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #F2F2F2;
-    padding: 16px 25px;
-    background-size: 60px;
+    height: 52px;
+    width: 50px;    
     border-radius: 15px 0 0 15px;
+}
+
+.form
+{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
 }
 
 /*zone texte recherche*/
 #search 
 {
-    width: auto;
-    height: 50px;
+    display: flex;
+    justify-self: stretch;
+    height: 48px;
     border: none;
     font-weight: bold;
     padding-left: 15px;
+
 }
 
 /*bouton recherche*/
-#submit 
+#submit
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 120px;
-    height: 50px;
+    height: 52px;
     background-color: #0065FC;
     border: none;
     border-radius: 0rem 1rem 1rem 0rem;
@@ -164,7 +172,7 @@ form
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: bold;
     width: 70%;
 }
@@ -217,7 +225,7 @@ form
     border: 1px solid #F2F2F2;
     border-radius: 10rem;
     padding:0 0.45em 0.1rem;
-    margin:0 0.5rem;
+    margin:0.8rem 0.5rem;
 }
 
 /* alignement nombres d'hergements trouvés*/
@@ -267,7 +275,7 @@ form
     height: 32rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* Ligne d'annonce hebergement n°1 */
@@ -293,7 +301,6 @@ form
 {
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
     align-content: space-between;
     background-color: white;
     width: 30%;
@@ -354,7 +361,7 @@ form
     justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1rem 2rem 2rem;
     margin-left: 1rem;
 }
 
@@ -364,8 +371,7 @@ form
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 1rem;
+    align-items: center;    
 }
 
 /*Annonce populaire*/
@@ -378,7 +384,6 @@ form
     box-shadow: 5px 5px 10px 1px #F2F2F2;
     cursor: pointer;
     font-size: 0.8rem;
-    margin:1rem;
     padding: 0.3rem;
     transition: 1s;
 }
@@ -398,11 +403,11 @@ form
 .text_annonce2
 {
     width: 60%;
+    height: 9rem;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 100%;
 }
 
 .text_annonce2 h3, .text_annonce2 p
@@ -412,7 +417,7 @@ form
 
 .star_pop
 {
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 /*bloc "Activité à Marseille"*/
@@ -443,6 +448,8 @@ form
 .bloc_act_a_marseille h3
 {
     margin: auto;
+    padding-left: 3%;
+    padding-top: 0.5rem;
 }
 
 /*image grande annonce*/
@@ -550,13 +557,6 @@ form
     border-radius: 1rem 1rem 0 0;
 }
 
-/* Padding titre activités */
-.bloc_act_a_marseille h3
-{
-    padding-left: 5%;
-    padding-top: 0.5rem;
-}
-
 /* Animation passage du curseur */
 .annonce_hebergement:hover, .annonce_populaire:hover, .annonce_act_1:hover, .annonce_40:hover, .annonce_50:hover, .annonce_60:hover
 {
@@ -609,6 +609,16 @@ footer a:hover
     width: 100%;
     }
 
+    .bloc_populaire
+    {
+        padding-top: 0;
+    }
+
+    .star_pop
+    {
+        padding-top: 2rem;
+    }
+    
     .bloc_hebergement
     {
         height: auto;
@@ -626,10 +636,6 @@ footer a:hover
     .bloc_annonces_heber_1, .bloc_annonces_heber_2
     {
         width: 46%;
-    }
-
-    .bloc_annonces_heber_1, .bloc_annonces_heber_2
-    {
         flex-direction: column;
         justify-content: space-around;
         height: 45rem;
@@ -642,78 +648,23 @@ footer a:hover
         margin: 0;
     }
 
-    .bloc_populaire
-    {
-        padding-top: 0;
-    }
+
 }
 
 
 /* Partie responsive */
 @media screen and (max-width:1000px)
 {
-    header
-    {
-        width: 100%;
-        padding: 0;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        justify-items: center;
-    }
-
-    header img
-    {
-        padding: 1rem;
-    }
-
-    .nav3
-    {
-        padding: 2rem;
-    }
-
-    .nav12
-    {
-        width: 100%;
-        justify-content: space-between;
-        order: 1;
-    }
-
-    .nav12 a
-    {
-        width: 50%;
-        text-align: center;
-        border-bottom: 0.2rem solid #F2F2F2;
-    }
-
-    .nav12 a:hover
-    {
-        border-bottom: 0.2rem solid #0065FC;
-        border-top: none;
-    }
-
-    .nav3
-    {
-        padding-top: 2rem;
-        padding-left: 0;
-    }
-
-
 
     .localisation
     {
-        width: 20rem;
+        width: 18rem;
     }
-
-    #search
-    {
-        width: 13rem;
-    }
-
+    
     #submit
     {
-        width: 50px;
-        height: 50px;
         border-radius: 1rem;
+        width: 50px;
     }
 
     #rechercher
@@ -740,13 +691,24 @@ footer a:hover
     .big_bloc_heb_pop
     {
         flex-direction: column-reverse;
-        height: auto;
     }
+
+    .bloc_populaire
+    {
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+    }
+
+
 
     .annonce_populaire
     {
-        margin: 1rem 0 ;
+        max-width: 100%;
+        margin-bottom: 1rem;
     }
+
+
 
     #hebergements
     {
@@ -761,8 +723,9 @@ footer a:hover
         flex-direction: column;
         justify-content: space-between;
         margin-right: 0;
-        padding-left: 3%;
-        padding-right: 3%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        height: auto;
     }
 
     .bloc_annonces_heber_1, .bloc_annonces_heber_2
@@ -782,22 +745,6 @@ footer a:hover
         margin-bottom: 2rem;
     }
 
-    .bloc_populaire
-    {
-        margin: 0;
-        border-radius: 0;
-    }
-
-    .bloc_populaire h3
-    {
-        padding: 1rem 0;
-    }
-
-    .star_pop
-    {
-        padding-top: 3rem;
-    }
-
     .bloc_act_a_marseille
     {
         display: flex;
@@ -805,6 +752,11 @@ footer a:hover
         justify-content: space-around;
         align-content: space-around;
         height: auto;
+    }
+
+    #activites
+    {
+        padding: 1rem;
     }
 
     .annonce_act_1, .annonce_40, .annonce_50, .annonce_60, .annonce_act_1
@@ -832,9 +784,62 @@ footer a:hover
 
 @media screen and (max-width: 700px) 
 {
-    footer
+
+    
+    header
     {
-        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        justify-items: center;
+    }
+
+    header img
+    {
+        padding: 1rem;
+    }
+
+    .localisation
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form
+    {
+        flex-grow: 1;      
+    }
+
+    #search
+    {
+        flex-grow: 1;
+    }
+
+    .nav12
+    {
+        width: 100%;
+        justify-content: space-between;
+        order: 1;
+    }
+
+    .nav12 a
+    {
+        width: 50%;
+        text-align: center;
+        border-bottom: 0.2rem solid #F2F2F2;
+    }
+
+    .nav12 a:hover
+    {
+        border-bottom: 0.2rem solid #0065FC;
+        border-top: none;
+    }
+
+    .nav3
+    {
+        padding: 2rem;
+        padding-left: 0;
     }
 
     h1
@@ -850,26 +855,31 @@ footer a:hover
     .a_propos, .nos_hebergements, .assistance 
     {
         margin-bottom: 2rem;
+        margin-right: 2rem;
     }
 }
 
 @media screen and (max-width: 500px) 
 {
+
+    
     .localisation
     {
         justify-content: space-between;
-        width: auto;
+        margin-top: 2rem;
     }
 
     form
     {
-        width: 100%;
+        flex-grow: 1;
+    }
+    
+    #search
+    {
+        flex-grow: 1;
     }
 
-    .bloc_hebergement
-    {
-        height: auto;
-    }
+
 
     .bloc_annonces12
     {
@@ -881,4 +891,8 @@ footer a:hover
         width: 100%;
     }    
     
+    footer
+    {
+        flex-direction: column;
+    }
 }
