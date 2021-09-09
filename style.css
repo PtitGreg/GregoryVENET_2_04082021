@@ -55,12 +55,13 @@ header img
 {
     text-decoration: none;
     cursor: pointer;
-    padding: 1.15rem  1rem;
+    padding: 1.3rem  1rem;
     color: #0065FC;
+    border-top: 0.15rem solid transparent;    
 }
 
 /*survol liens navigateur*/
-.nav12 a:hover 
+.nav12 a:hover, .nav3:hover
 {
     border-top: 0.15rem solid #0065FC;
 }
@@ -70,7 +71,8 @@ header img
 {
     font-weight: bold;
     color: #0065FC;
-    padding-left: 1rem;
+    padding: 1.3rem;
+    border-top: 0.15rem solid transparent;
 }
 
 /*couleur activité du navigateur + annonces*/
