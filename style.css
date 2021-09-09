@@ -561,7 +561,7 @@ h1
 .annonce_hebergement:hover, .annonce_populaire:hover, .annonce_act_1:hover, .annonce_40:hover, .annonce_50:hover, .annonce_60:hover
 {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 footer /*personnalisation footer*/
