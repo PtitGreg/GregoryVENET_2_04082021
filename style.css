@@ -6,10 +6,6 @@ html, body
     
 }
 
-form
-{
-    touch-action : pinch-zoom;
-}
 
 /*taille titre h2*/
 h2 
@@ -125,7 +121,7 @@ h1
 .form
 {
     display: flex;
-    flex-grow: 1;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -137,7 +133,8 @@ h1
     height: 48px;
     border: none;
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 0;
 
 }
 
