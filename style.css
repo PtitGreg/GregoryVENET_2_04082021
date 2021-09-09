@@ -3,6 +3,12 @@ html, body
 { 
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     margin:0;
+    
+}
+
+form
+{
+    touch-action : pinch-zoom;
 }
 
 /*taille titre h2*/
@@ -862,17 +868,13 @@ footer a:hover
 @media screen and (max-width: 500px) 
 {
 
-    
     .localisation
     {
         justify-content: space-between;
         margin-top: 2rem;
     }
 
-    form
-    {
-        flex-grow: 1;
-    }
+   
     
     #search
     {
