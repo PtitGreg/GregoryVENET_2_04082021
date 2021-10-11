@@ -1,5 +1,4 @@
 # Projet-2-Reservia
--------------------
 
 [Page disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_2_03082021/)
 
