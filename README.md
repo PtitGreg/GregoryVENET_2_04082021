@@ -8,7 +8,7 @@ Enfin, vous avez trouvé votre premier stage en tant que développeur web chez R
 
 Un nouveau design basé sur les principes du Material Design vient d’être proposé par Loïc, designer UI.
 
-![Maquette de Reservia](https://raw.githubusercontent.com/PtitGreg/GregoryVENET_2_03082021/6fba4adadfbe09523bd69c9f6cc50b98de6acf4f/Desktop%20-%201.png)
+![Maquette de Reservia]https://user.oc-static.com/upload/2021/09/29/16329280343051_Desktop%20-%201.png)
 
 Avant de valider définitivement ce design, l’entreprise décide de réaliser un prototype. La première étape consiste à intégrer la maquette responsive en HTML et CSS. Voici donc la tâche qui vous est attribuée ! Loïc vous envoie un mail pour vous en dire plus, en mettant en copie votre manager, Sarah, qui est CTO de l’entreprise.
 
