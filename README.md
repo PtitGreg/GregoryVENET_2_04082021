@@ -1,6 +1,6 @@
 # Projet-2-Reservia
 
-[Page disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_2_03082021/)
+[Page disponible sur GitHub Pages](https://ptitgreg.github.io/GregoryVENET_2_04082021/)
 
 ## Transformez une maquette en site web
 
