@@ -69,3 +69,69 @@ Vous vous plongez dans ce projet… Et commencez à vous poser quelques question
 
 
 Retrouvez-moi sur [Mon compte LinkedIn](https://www.linkedin.com/in/gregoryvenet)
+
+## Compétences évaluées
+* Mettre en place son environnement Front-End
+* Assurer la cohérence graphique d'un site web
+* Mettre en œuvre des effets CSS graphiques avancés
+* Mettre en place une structure de navigation pour un site web
+* Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+
+## Remarques sur l'évaluation
+### Compétences évaluées
+
+En vous basant sur les critères d’évaluation du projet, définissez le statut d’acquisition de chaque compétence et commentez à l'aide de ces instructions :
+
+Validé
+
+ 
+
+## 1. Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
+
+Validé 
+
+Commentaires :  Bien, l'ensemble est plutôt assimilé et la nomenclature des commit s'est améliorée !
+
+ 
+
+## 2. Mettre en place son environnement Front-End
+
+Validé
+
+Commentaires :  Bonne aisance avec l'utilisation de vsCode;
+
+ 
+
+## 3. Intégrer du contenu conformément à une maquette
+
+Validé 
+
+Commentaires : Bonne intégration;
+
+ 
+
+## 4. Implémenter une interface responsive
+
+Validé
+
+Commentaires : RAS
+
+ 
+
+## Livrable
+
+Points forts : Ajout d'animations/Transition, responsive pensé. Nomenclature des classes intéressante
+
+ 
+
+Axes d'amélioration : Quelques points sont à parfaire, une sémantique plus poussée et moins de balises en général; Du même ordre des optimisations à voir;
+
+ 
+
+## Soutenance
+
+Remarques : A l'aise à l'oral, bonne présentation => penser à préparer un support de présentation pour la suite, penser le discour et s'entrainer un peu afin d'élaguer un peu les sons parasites ( aa, eu, et, etc.. ) 
+
+ 
+
+# Félicitation, bravo et bonne continuation !
