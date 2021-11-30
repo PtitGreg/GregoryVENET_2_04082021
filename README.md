@@ -77,8 +77,8 @@ Retrouvez-moi sur [Mon compte LinkedIn](https://www.linkedin.com/in/gregoryvenet
 * Mettre en place une structure de navigation pour un site web
 * Utiliser un système de gestion de versions pour le suivi du projet et son hébergement
 
-## Remarques sur l'évaluation
-### Compétences évaluées
+# Remarques sur l'évaluation
+## Compétences évaluées
 
 En vous basant sur les critères d’évaluation du projet, définissez le statut d’acquisition de chaque compétence et commentez à l'aide de ces instructions :
 
